@@ -14,7 +14,7 @@ module.exports = class SpeelbaarObject {
         }
     }
 
-    //1 + (0 TOT 1) * (1+6-1=)6 (maximaal 6.9999999999999999) afgerond naar beneden is getal tussen 0 en 6
+    //1 + (0 TOT 1) * (1+6-1=)6 (maximaal 6.9999999999999999) afgerond naar beneden is getal tussen 1 en 6
     genereerWillekeurigGetal(min, max) {
         if (!(Number.isInteger(min)) || !(Number.isInteger(max)) || min > max) {
             throw new Error("misse ingave voor min of max");
